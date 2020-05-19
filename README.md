@@ -7,8 +7,10 @@ This is a simple time machine docker image using samba and avahi. It's mostly ba
 ### Simple way
 ```
 docker run -d --net=host \
-            -v /opt/timemachine:/timemachine/ \
-            -e TM_USER=timemachine \
+            -v /mnt/nas/timemachine:/timemachine/ \
+            -v /mnt/archive/Foto_backup:/foto/ \
+            -v /mnt/nas:/nas/ \
+            -e TM_USER=tm_user \
             -e TM_PW=timemachine \
             --name=timemachine willtho/samba-timemachine
 ```
@@ -19,7 +21,7 @@ Use the provided `docker-compose.yml` file and create the conainer with `docker-
 ### Environment Variables
 | Varibable | Function                | Default.    |
 | ----------|:-----------------------:|-------------:|
-| TM_USER   | Time Machine User       | timemachine |
+| TM_USER   | Time Machine User       | tm_user |
 | TM_PW     | Users Password          | timemachine |
 | TM_ID     | UserID                  | 1000        |
 | TM_SIZE   | Time Machine Size in MB | 512000      |
