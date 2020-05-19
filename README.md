@@ -11,7 +11,7 @@ docker run -d --net=host \
             -v /mnt/nas:/nas/ \
             -e TM_USER=tm_user \
             -e TM_PW=timemachine \
-            --name=timemachine willtho/samba-timemachine
+            --name=timemachine mariomare22/docker-samba-timemachine
 ```
 
 ### docker-compose
