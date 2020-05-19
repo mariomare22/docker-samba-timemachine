@@ -5,9 +5,11 @@ services:
     restart: always
     network_mode: host
     environment:
-      TM_USER: timemachine
+      TM_USER: tm_user
       TM_PW: timemachine
       TM_SIZE: 512000
     volumes:
-      - './timemachine:/timemachine'
+      - '/mnt/nas/timemachine:/timemachine'
+      - '/mnt/archive/Foto_backup:/foto'
+      - '/mnt/nas/:/nas'
       - '/etc/localtime:/etc/localtime:ro'

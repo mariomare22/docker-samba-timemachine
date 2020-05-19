@@ -1,5 +1,5 @@
 FROM alpine:latest
-MAINTAINER Thomas Willems <twillems@willtho.com>
+MAINTAINER Mario Volterra
 
 RUN apk add --update \
     avahi \
