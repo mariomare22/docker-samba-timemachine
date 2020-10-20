@@ -8,8 +8,8 @@ Thanks to [willtho89](https://github.com/willtho89/docker-samba-timemachine) for
 ### Simple way
 ```
 docker run -d --net=host \
-            -v /mnt/nas/timemachine:/timemachine/ \
-            -v /mnt/archive/Foto_backup:/foto/ \
+            -v /mnt/backup/timemachine:/timemachine/ \
+            -v /mnt/backup/foto:/foto/ \
             -v /mnt/nas:/nas/ \
             -e TM_USER=tm_user \
             -e TM_PW=timemachine \
