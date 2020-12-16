@@ -12,4 +12,5 @@ services:
       - '/mnt/backup/timemachine:/timemachine'
       - '/mnt/backup/foto:/foto'
       - '/mnt/nas/:/nas'
+      - '/home/mario/docker/transmission/watch:/watch'
       - '/etc/localtime:/etc/localtime:ro'
