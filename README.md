@@ -11,6 +11,7 @@ docker run -d --net=host \
             -v /mnt/backup/timemachine:/timemachine/ \
             -v /mnt/backup/foto:/foto/ \
             -v /mnt/nas:/nas/ \
+            -v /home/mario/docker/transmission/watch:/watch \
             -e TM_USER=tm_user \
             -e TM_PW=timemachine \
             --name=timemachine mariomare22/docker-samba-timemachine
