@@ -1,6 +1,7 @@
 version: '3'
 services:
   app:
+    container_name: docker-samba-timemachine
     image: mariomare22/docker-samba-timemachine
     restart: always
     network_mode: host
