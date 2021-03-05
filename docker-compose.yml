@@ -10,6 +10,7 @@ services:
       TM_PW: timemachine
       TM_SIZE: 512000
     volumes:
+      - '/mnt/backup/docker/config/samba:/etc/samba'
       - '/mnt/backup/timemachine:/timemachine'
       - '/mnt/backup/foto:/foto'
       - '/mnt/nas/:/nas'
