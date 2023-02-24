@@ -1,4 +1,4 @@
-FROM alpine:latest
+FROM alpine:3.17.2
 MAINTAINER Mario Volterra
 
 RUN apk add --update \
